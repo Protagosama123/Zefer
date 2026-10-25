@@ -1,0 +1,6 @@
+{
+  "name": "Zefer",
+  "description": "Native Android nail extensions e-commerce app with live AR virtual try-on",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

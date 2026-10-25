@@ -1,0 +1,390 @@
+[
+  {
+    "id": "wine_gold_royal",
+    "name": "Wine Gold Royal",
+    "description": "Luxurious deep burgundy press-on extensions featuring handcrafted 24K gold foil flakes and a salon high-gloss protective topcoat. Elegant tapered almond shape for an elevated statement.",
+    "variants": [
+      {
+        "id": "wine_gold",
+        "name": "Wine & Gold Foil",
+        "thumbImage": "images/thumb_wine_gold.png",
+        "heroImage": "images/hero_wine_gold.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold/thumb.png",
+          "index": "sprites/wine_gold/index.png",
+          "middle": "sprites/wine_gold/middle.png",
+          "ring": "sprites/wine_gold/ring.png",
+          "pinky": "sprites/wine_gold/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold_floral",
+        "name": "Wine Gold Floral",
+        "thumbImage": "images/thumb_wine_gold_floral.png",
+        "heroImage": "images/hero_wine_gold_floral.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold_floral/thumb.png",
+          "index": "sprites/wine_gold_floral/index.png",
+          "middle": "sprites/wine_gold_floral/middle.png",
+          "ring": "sprites/wine_gold_floral/ring.png",
+          "pinky": "sprites/wine_gold_floral/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "emerald_velvet",
+        "name": "Emerald Marble",
+        "thumbImage": "images/thumb_emerald_velvet.png",
+        "heroImage": "images/hero_emerald_velvet.png",
+        "sprites": {
+          "thumb": "sprites/emerald_velvet/thumb.png",
+          "index": "sprites/emerald_velvet/index.png",
+          "middle": "sprites/emerald_velvet/middle.png",
+          "ring": "sprites/emerald_velvet/ring.png",
+          "pinky": "sprites/emerald_velvet/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "nude_minimalist",
+        "name": "Nude Minimalist",
+        "thumbImage": "images/thumb_nude_minimalist.png",
+        "heroImage": "images/hero_nude_minimalist.png",
+        "sprites": {
+          "thumb": "sprites/nude_minimalist/thumb.png",
+          "index": "sprites/nude_minimalist/index.png",
+          "middle": "sprites/nude_minimalist/middle.png",
+          "ring": "sprites/nude_minimalist/ring.png",
+          "pinky": "sprites/nude_minimalist/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "midnight_starlight",
+        "name": "Midnight Starlight",
+        "thumbImage": "images/thumb_midnight_starlight.png",
+        "heroImage": "images/hero_midnight_starlight.png",
+        "sprites": {
+          "thumb": "sprites/midnight_starlight/thumb.png",
+          "index": "sprites/midnight_starlight/index.png",
+          "middle": "sprites/midnight_starlight/middle.png",
+          "ring": "sprites/midnight_starlight/ring.png",
+          "pinky": "sprites/midnight_starlight/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      }
+    ]
+  },
+  {
+    "id": "emerald_goddess",
+    "name": "Emerald Goddess",
+    "description": "Rich gemstone emerald jade with natural marble veining and radiant 24K gold foil trim. Sculpted medium coffin silhouette that enchants day and night.",
+    "variants": [
+      {
+        "id": "emerald_velvet",
+        "name": "Emerald Marble",
+        "thumbImage": "images/thumb_emerald_velvet.png",
+        "heroImage": "images/hero_emerald_velvet.png",
+        "sprites": {
+          "thumb": "sprites/emerald_velvet/thumb.png",
+          "index": "sprites/emerald_velvet/index.png",
+          "middle": "sprites/emerald_velvet/middle.png",
+          "ring": "sprites/emerald_velvet/ring.png",
+          "pinky": "sprites/emerald_velvet/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold",
+        "name": "Wine Accent",
+        "thumbImage": "images/thumb_wine_gold.png",
+        "heroImage": "images/hero_wine_gold.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold/thumb.png",
+          "index": "sprites/wine_gold/index.png",
+          "middle": "sprites/wine_gold/middle.png",
+          "ring": "sprites/wine_gold/ring.png",
+          "pinky": "sprites/wine_gold/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "nude_minimalist",
+        "name": "Nude Contrast",
+        "thumbImage": "images/thumb_nude_minimalist.png",
+        "heroImage": "images/hero_nude_minimalist.png",
+        "sprites": {
+          "thumb": "sprites/nude_minimalist/thumb.png",
+          "index": "sprites/nude_minimalist/index.png",
+          "middle": "sprites/nude_minimalist/middle.png",
+          "ring": "sprites/nude_minimalist/ring.png",
+          "pinky": "sprites/nude_minimalist/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold_floral",
+        "name": "Emerald Garden",
+        "thumbImage": "images/thumb_wine_gold_floral.png",
+        "heroImage": "images/hero_wine_gold_floral.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold_floral/thumb.png",
+          "index": "sprites/wine_gold_floral/index.png",
+          "middle": "sprites/wine_gold_floral/middle.png",
+          "ring": "sprites/wine_gold_floral/ring.png",
+          "pinky": "sprites/wine_gold_floral/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "midnight_starlight",
+        "name": "Deep Space Jade",
+        "thumbImage": "images/thumb_midnight_starlight.png",
+        "heroImage": "images/hero_midnight_starlight.png",
+        "sprites": {
+          "thumb": "sprites/midnight_starlight/thumb.png",
+          "index": "sprites/midnight_starlight/index.png",
+          "middle": "sprites/midnight_starlight/middle.png",
+          "ring": "sprites/midnight_starlight/ring.png",
+          "pinky": "sprites/midnight_starlight/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nude_glazed_donut",
+    "name": "Nude Glazed Chic",
+    "description": "Clean girl aesthetic perfected. Translucent milky rose quartz with mirror chrome glazed powder top. Versatile short squoval length for effortlessly polished daily wear.",
+    "variants": [
+      {
+        "id": "nude_minimalist",
+        "name": "Glazed Chrome",
+        "thumbImage": "images/thumb_nude_minimalist.png",
+        "heroImage": "images/hero_nude_minimalist.png",
+        "sprites": {
+          "thumb": "sprites/nude_minimalist/thumb.png",
+          "index": "sprites/nude_minimalist/index.png",
+          "middle": "sprites/nude_minimalist/middle.png",
+          "ring": "sprites/nude_minimalist/ring.png",
+          "pinky": "sprites/nude_minimalist/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold",
+        "name": "Blush & Gold",
+        "thumbImage": "images/thumb_wine_gold.png",
+        "heroImage": "images/hero_wine_gold.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold/thumb.png",
+          "index": "sprites/wine_gold/index.png",
+          "middle": "sprites/wine_gold/middle.png",
+          "ring": "sprites/wine_gold/ring.png",
+          "pinky": "sprites/wine_gold/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold_floral",
+        "name": "Floral Lace",
+        "thumbImage": "images/thumb_wine_gold_floral.png",
+        "heroImage": "images/hero_wine_gold_floral.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold_floral/thumb.png",
+          "index": "sprites/wine_gold_floral/index.png",
+          "middle": "sprites/wine_gold_floral/middle.png",
+          "ring": "sprites/wine_gold_floral/ring.png",
+          "pinky": "sprites/wine_gold_floral/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "emerald_velvet",
+        "name": "Emerald Touch",
+        "thumbImage": "images/thumb_emerald_velvet.png",
+        "heroImage": "images/hero_emerald_velvet.png",
+        "sprites": {
+          "thumb": "sprites/emerald_velvet/thumb.png",
+          "index": "sprites/emerald_velvet/index.png",
+          "middle": "sprites/emerald_velvet/middle.png",
+          "ring": "sprites/emerald_velvet/ring.png",
+          "pinky": "sprites/emerald_velvet/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "midnight_starlight",
+        "name": "Obsidian Tip",
+        "thumbImage": "images/thumb_midnight_starlight.png",
+        "heroImage": "images/hero_midnight_starlight.png",
+        "sprites": {
+          "thumb": "sprites/midnight_starlight/thumb.png",
+          "index": "sprites/midnight_starlight/index.png",
+          "middle": "sprites/midnight_starlight/middle.png",
+          "ring": "sprites/midnight_starlight/ring.png",
+          "pinky": "sprites/midnight_starlight/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      }
+    ]
+  },
+  {
+    "id": "midnight_celestial",
+    "name": "Midnight Celestial",
+    "description": "Intense jet black with twinkling starlight micro-pigments and metallic silver constellations. Gloss gel encapsulated for extreme durability and mirror shine.",
+    "variants": [
+      {
+        "id": "midnight_starlight",
+        "name": "Midnight Starlight",
+        "thumbImage": "images/thumb_midnight_starlight.png",
+        "heroImage": "images/hero_midnight_starlight.png",
+        "sprites": {
+          "thumb": "sprites/midnight_starlight/thumb.png",
+          "index": "sprites/midnight_starlight/index.png",
+          "middle": "sprites/midnight_starlight/middle.png",
+          "ring": "sprites/midnight_starlight/ring.png",
+          "pinky": "sprites/midnight_starlight/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold",
+        "name": "Wine Velvet",
+        "thumbImage": "images/thumb_wine_gold.png",
+        "heroImage": "images/hero_wine_gold.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold/thumb.png",
+          "index": "sprites/wine_gold/index.png",
+          "middle": "sprites/wine_gold/middle.png",
+          "ring": "sprites/wine_gold/ring.png",
+          "pinky": "sprites/wine_gold/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "wine_gold_floral",
+        "name": "Celestial Flora",
+        "thumbImage": "images/thumb_wine_gold_floral.png",
+        "heroImage": "images/hero_wine_gold_floral.png",
+        "sprites": {
+          "thumb": "sprites/wine_gold_floral/thumb.png",
+          "index": "sprites/wine_gold_floral/index.png",
+          "middle": "sprites/wine_gold_floral/middle.png",
+          "ring": "sprites/wine_gold_floral/ring.png",
+          "pinky": "sprites/wine_gold_floral/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "emerald_velvet",
+        "name": "Aurora Emerald",
+        "thumbImage": "images/thumb_emerald_velvet.png",
+        "heroImage": "images/hero_emerald_velvet.png",
+        "sprites": {
+          "thumb": "sprites/emerald_velvet/thumb.png",
+          "index": "sprites/emerald_velvet/index.png",
+          "middle": "sprites/emerald_velvet/middle.png",
+          "ring": "sprites/emerald_velvet/ring.png",
+          "pinky": "sprites/emerald_velvet/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      },
+      {
+        "id": "nude_minimalist",
+        "name": "Nude Moon",
+        "thumbImage": "images/thumb_nude_minimalist.png",
+        "heroImage": "images/hero_nude_minimalist.png",
+        "sprites": {
+          "thumb": "sprites/nude_minimalist/thumb.png",
+          "index": "sprites/nude_minimalist/index.png",
+          "middle": "sprites/nude_minimalist/middle.png",
+          "ring": "sprites/nude_minimalist/ring.png",
+          "pinky": "sprites/nude_minimalist/pinky.png"
+        },
+        "manifest": {
+          "aspectRatio": 2.0,
+          "anchor": "base-center",
+          "tipDirection": "up"
+        }
+      }
+    ]
+  }
+]
