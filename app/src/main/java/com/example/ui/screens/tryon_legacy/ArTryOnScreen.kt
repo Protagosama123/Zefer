@@ -1,4 +1,4 @@
-package com.example.ui.screens.tryon
+package com.example.ui.screens.tryon_legacy
 
 import android.Manifest
 import android.content.Intent
@@ -72,7 +72,7 @@ import androidx.core.content.ContextCompat
 import coil.compose.AsyncImage
 import com.example.BuildConfig
 import com.example.R
-import com.example.cv.pipeline.HandLandmarkerHelper
+import com.example.cv.live_legacy.HandLandmarkerHelper
 import com.example.data.model.Variant
 import com.example.ui.screens.home.rememberImageSource
 import com.example.ui.theme.ZeferCard

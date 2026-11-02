@@ -1,4 +1,4 @@
-package com.example.ui.screens.tryon
+package com.example.ui.screens.tryon_legacy
 
 import android.content.Context
 import android.util.Log
@@ -18,7 +18,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
-import com.example.cv.pipeline.HandLandmarkerHelper
+import com.example.cv.live_legacy.HandLandmarkerHelper
 import java.util.concurrent.Executors
 
 @Composable

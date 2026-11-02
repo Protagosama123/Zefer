@@ -1,4 +1,4 @@
-package com.example.cv.pipeline
+package com.example.cv.live_legacy
 
 import androidx.compose.ui.geometry.Offset
 import kotlin.math.PI

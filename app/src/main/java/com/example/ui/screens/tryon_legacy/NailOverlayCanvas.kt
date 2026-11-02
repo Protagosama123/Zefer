@@ -1,4 +1,4 @@
-package com.example.ui.screens.tryon
+package com.example.ui.screens.tryon_legacy
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -18,8 +18,8 @@ import androidx.compose.ui.graphics.drawscope.drawIntoCanvas
 import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.testTag
-import com.example.cv.pipeline.FingerType
-import com.example.cv.pipeline.HandLandmarkerHelper
+import com.example.cv.live_legacy.FingerType
+import com.example.cv.live_legacy.HandLandmarkerHelper
 import com.example.data.model.Variant
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

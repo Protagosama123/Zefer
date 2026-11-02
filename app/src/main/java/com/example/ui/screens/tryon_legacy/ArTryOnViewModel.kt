@@ -1,4 +1,4 @@
-package com.example.ui.screens.tryon
+package com.example.ui.screens.tryon_legacy
 
 import android.content.ContentValues
 import android.content.Context
@@ -9,9 +9,9 @@ import android.os.Environment
 import android.provider.MediaStore
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.cv.pipeline.DebugMetrics
-import com.example.cv.pipeline.HandLandmarkerHelper
-import com.example.cv.pipeline.TunableParams
+import com.example.cv.live_legacy.DebugMetrics
+import com.example.cv.live_legacy.HandLandmarkerHelper
+import com.example.cv.live_legacy.TunableParams
 import com.example.data.model.Product
 import com.example.data.model.Variant
 import com.example.data.repository.ProductRepository

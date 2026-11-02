@@ -1,4 +1,4 @@
-package com.example.ui.screens.tryon
+package com.example.ui.screens.tryon_legacy
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -27,8 +27,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.cv.pipeline.DebugMetrics
-import com.example.cv.pipeline.TunableParams
+import com.example.cv.live_legacy.DebugMetrics
+import com.example.cv.live_legacy.TunableParams
 
 @Composable
 fun DebugHudOverlay(

@@ -1,4 +1,4 @@
-package com.example.cv.pipeline
+package com.example.cv.live_legacy
 
 import kotlin.math.PI
 import kotlin.math.abs

@@ -28,10 +28,12 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.PhotoLibrary
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -74,6 +76,7 @@ fun HomeScreen(
     viewModel: HomeViewModel,
     onNavigateToDetail: (productId: String) -> Unit,
     onNavigateToAdmin: () -> Unit,
+    onNavigateToMyTryOns: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -86,6 +89,7 @@ fun HomeScreen(
         onSearchQueryChange = viewModel::onSearchQueryChanged,
         onProductClick = onNavigateToDetail,
         onLogoLongClick = viewModel::showAdminPinDialog,
+        onNavigateToMyTryOns = onNavigateToMyTryOns,
         modifier = modifier
     )
 
@@ -111,6 +115,7 @@ fun HomeScreenContent(
     onSearchQueryChange: (String) -> Unit,
     onProductClick: (productId: String) -> Unit,
     onLogoLongClick: () -> Unit,
+    onNavigateToMyTryOns: () -> Unit = {},
     modifier: Modifier = Modifier
 ) {
     Scaffold(
@@ -127,32 +132,49 @@ fun HomeScreenContent(
         ) {
             Spacer(modifier = Modifier.height(16.dp))
 
-            // Top Header: Small wordmark top-left with logo (long press triggers admin)
+            // Top Header: Small wordmark top-left with logo (long press triggers admin) + My Try-Ons on right
             Row(
                 verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .combinedClickable(
-                        onClick = {},
-                        onLongClick = onLogoLongClick
-                    )
                     .testTag("home_header_row")
             ) {
-                Image(
-                    painter = painterResource(id = R.drawable.zefer_logo),
-                    contentDescription = stringResource(id = R.string.app_name),
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
                     modifier = Modifier
-                        .size(36.dp)
-                        .testTag("home_logo_mark")
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-                Text(
-                    text = stringResource(id = R.string.wordmark),
-                    fontFamily = BrushScriptFontFamily,
-                    fontSize = 28.sp,
-                    color = ZeferText,
-                    modifier = Modifier.testTag("home_wordmark_text")
-                )
+                        .combinedClickable(
+                            onClick = {},
+                            onLongClick = onLogoLongClick
+                        )
+                ) {
+                    Image(
+                        painter = painterResource(id = R.drawable.zefer_logo),
+                        contentDescription = stringResource(id = R.string.app_name),
+                        modifier = Modifier
+                            .size(36.dp)
+                            .testTag("home_logo_mark")
+                    )
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Text(
+                        text = stringResource(id = R.string.wordmark),
+                        fontFamily = BrushScriptFontFamily,
+                        fontSize = 28.sp,
+                        color = ZeferText,
+                        modifier = Modifier.testTag("home_wordmark_text")
+                    )
+                }
+
+                IconButton(
+                    onClick = onNavigateToMyTryOns,
+                    modifier = Modifier.testTag("home_my_tryons_button")
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.PhotoLibrary,
+                        contentDescription = "My Try-Ons",
+                        tint = ZeferText
+                    )
+                }
             }
 
             Spacer(modifier = Modifier.height(16.dp))

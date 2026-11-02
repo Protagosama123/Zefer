@@ -12,6 +12,8 @@ interface AppContainer {
     val userPreferences: UserPreferences
     val productRepository: ProductRepository
     val spriteExtractor: NailSpriteExtractor
+    val tryOnSessionRepository: com.example.data.repository.TryOnSessionRepository
+    val handDetector: com.example.cv.tryon.HandDetector
 }
 
 class DefaultAppContainer(private val context: Context) : AppContainer {
@@ -29,5 +31,13 @@ class DefaultAppContainer(private val context: Context) : AppContainer {
 
     override val spriteExtractor: NailSpriteExtractor by lazy {
         NailSpriteExtractor()
+    }
+
+    override val tryOnSessionRepository: com.example.data.repository.TryOnSessionRepository by lazy {
+        com.example.data.repository.TryOnSessionRepository(context)
+    }
+
+    override val handDetector: com.example.cv.tryon.HandDetector by lazy {
+        com.example.cv.tryon.HandDetector(context)
     }
 }

@@ -20,8 +20,9 @@ import com.example.ui.screens.home.HomeScreen
 import com.example.ui.screens.home.HomeViewModel
 import com.example.ui.screens.splash.SplashScreen
 import com.example.ui.screens.splash.SplashViewModel
-import com.example.ui.screens.tryon.ArTryOnScreen
-import com.example.ui.screens.tryon.ArTryOnViewModel
+import com.example.ui.screens.tryon.MyTryOnsScreen
+import com.example.ui.screens.tryon.PhotoInputScreen
+import com.example.ui.screens.tryon.TryOnResultScreen
 
 @Composable
 fun ZeferNavGraph(
@@ -98,6 +99,9 @@ fun ZeferNavGraph(
                 },
                 onNavigateToAdmin = {
                     navController.navigate(Screen.Admin.route)
+                },
+                onNavigateToMyTryOns = {
+                    navController.navigate(Screen.MyTryOns.route)
                 }
             )
         }
@@ -113,14 +117,14 @@ fun ZeferNavGraph(
                 viewModel = detailViewModel,
                 onNavigateBack = { navController.popBackStack() },
                 onNavigateToTryOn = { prodId, variantId ->
-                    navController.navigate(Screen.ArTryOn.createRoute(prodId, variantId))
+                    navController.navigate(Screen.PhotoInput.createRoute(prodId, variantId))
                 }
             )
         }
 
-        // AR Try-On Screen
+        // Static Photo Input Screen
         composable(
-            route = Screen.ArTryOn.route,
+            route = Screen.PhotoInput.route,
             arguments = listOf(
                 navArgument("productId") { type = NavType.StringType },
                 navArgument("variantId") { type = NavType.StringType }
@@ -128,9 +132,45 @@ fun ZeferNavGraph(
         ) { backStackEntry ->
             val productId = backStackEntry.arguments?.getString("productId") ?: ""
             val variantId = backStackEntry.arguments?.getString("variantId") ?: ""
-            val tryOnViewModel = viewModel { ArTryOnViewModel(container.productRepository, productId, variantId) }
-            ArTryOnScreen(
-                viewModel = tryOnViewModel,
+            PhotoInputScreen(
+                productId = productId,
+                variantId = variantId,
+                productRepository = container.productRepository,
+                sessionRepository = container.tryOnSessionRepository,
+                onNavigateBack = { navController.popBackStack() },
+                onPhotoSelected = {
+                    navController.navigate(Screen.TryOnResult.createRoute(productId, variantId))
+                }
+            )
+        }
+
+        // Static Try-On Result Screen
+        composable(
+            route = Screen.TryOnResult.route,
+            arguments = listOf(
+                navArgument("productId") { type = NavType.StringType },
+                navArgument("variantId") { type = NavType.StringType }
+            )
+        ) { backStackEntry ->
+            val productId = backStackEntry.arguments?.getString("productId") ?: ""
+            val variantId = backStackEntry.arguments?.getString("variantId") ?: ""
+            TryOnResultScreen(
+                productId = productId,
+                variantId = variantId,
+                productRepository = container.productRepository,
+                sessionRepository = container.tryOnSessionRepository,
+                handDetector = container.handDetector,
+                onNavigateBack = { navController.popBackStack() },
+                onNavigateToMyTryOns = {
+                    navController.navigate(Screen.MyTryOns.route)
+                }
+            )
+        }
+
+        // My Saved Try-Ons Screen
+        composable(Screen.MyTryOns.route) {
+            MyTryOnsScreen(
+                sessionRepository = container.tryOnSessionRepository,
                 onNavigateBack = { navController.popBackStack() }
             )
         }

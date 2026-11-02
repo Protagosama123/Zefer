@@ -1,10 +1,10 @@
 package com.example
 
-import com.example.cv.pipeline.CircularAngleFilter
-import com.example.cv.pipeline.FingerType
-import com.example.cv.pipeline.LandmarkPoint
-import com.example.cv.pipeline.NailAnchorCalculator
-import com.example.cv.pipeline.OneEuroFilter
+import com.example.cv.live_legacy.CircularAngleFilter
+import com.example.cv.live_legacy.FingerType
+import com.example.cv.live_legacy.LandmarkPoint
+import com.example.cv.live_legacy.NailAnchorCalculator
+import com.example.cv.live_legacy.OneEuroFilter
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
